@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Camera.css">
+  <title>Meu Perfil</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container1">
+            <a href="AutoExpress.html">
+            <div class="logo">
+                <img class="img-logo" src="Img/logo-autoexpress.png" alt="">
+                <h1 class="auto">Auto</h1>
+                <h1 class="express">Express</h1>
+                </div></a>
+                <nav class="menu1">
+                    <a href="" class="item1">Início</a>
+                    <a href="" class="item1">Sobre Nós</a>
+                    <a href="" class="item1">Serviços</a>
+                    <a href="" class="item1">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <h1 class="tire">Tire uma foto para o seu perfil!</h1>
+    <section>
+        <video id="camera" autoplay></video>
+
+        <div class="perfil">
+            <div id="foto"></div>
+            <h1>Nome</h1>
+            <h5>Seu Email@gmail.com</h3>
+        </div>
+    </section>
+
+    <div class="botoesFoto">
+        <button class="type1" onclick="abrirCamera()">Abrir câmera</button>
+        <button class="type1" onclick="tirarFoto()">Tirar Foto</button>
+        <button class="type1" onclick="fechar()">Fechar câmera</button>
+        <button class="type1" onclick="apagarFoto()">Apagar foto</button>
+    </div>
+
+    <input class="arquivo" type="file" id="inputFile" accept="image/*" onchange="previewFile()">
+<img src="" id="previewImg" alt="" style="max-width: 300px; max-height: 300px">
+ 
+
+  <script src="Camera.js"></script>
+</body>
+</html>
